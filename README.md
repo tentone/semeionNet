@@ -1,24 +1,38 @@
 # SemeionNet
  - A set of machine learning experiments with the semeion and MNIST handwritten digit dataset using  tensorflow
  - The objective of this experiment was to test multiple classification methods using the semeion handwriting dataset and measure performance of different classifiers implementation in tensorflow. 
- - The code available was tested with Python 3.5 and Tensorflow 1.1
 
 ## Dataset
  - The semeion dataset is composed of 1593 handwritten digits from 80 persons that were scanned and stretched to a 16x16 size image.
  	- http://archive.ics.uci.edu/ml/datasets/semeion+handwritten+digit
  - MNIST dataset is a subset of the NIST dataset that has over 60000 handwritten digits.
  	- http://yann.lecun.com/exdb/mnist/
-
-## How to run
- - 
+ - To change the dataset, change the dataset loading code and sample size in the implementation files, if you want to you can also import your own dataset, this code can be easily adapted to classify other type of images.
+	```
+	width = 16
+	height = 16
+	dataset = semeion.read_data_semeion()
+	```
 
 ## Install
+ - The code available was tested with Python 3.5 and Tensorflow 1.1
  - Before running the examples in the repository, install the dependencies indicated bellow
 	 - tensorflow
 	 - matplotlib
 	 - sklearn
 	 - pandas
 	 - numpy
+
+## How to run
+ - Clone the repository into your computer
+	- https://github.com/tentone/SemeionNet.git
+ - Dataset files are already included in the repository inside the /source/dataset folder.
+ - Run one of the implementation files from the source folder, each one implements a diferent classifier.
+ 	- knn.py
+ 	- softmax.py
+ 	- perceptron.py
+ 	- cnn.py
+ 	- lstm.py
 
 ## Results
  - The results bellow were obtained, using 1300 random entries from the semeio dataset to train the classifier and 400 random entries to test the trained model.
