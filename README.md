@@ -36,7 +36,7 @@
 
 ## Results
  - The results bellow were obtained, using 1300 random entries from the semeio dataset to train the classifier and 400 random entries to test the trained model.
- - The results obtained are expected, except for the recurrent neural net that developed patterns to predict the python internal pseudo-random number generator.
+ - The results obtained are expected, for the recurrent network (long short term memory), i haven't applied any confusion to the input, so after some time it detects that probably the next sample its equal to the current one.
  - Tests were run on a Core i5 6500 CPU with 24GB of RAM.
 
 | Classifier  | Time | Accuracy |
