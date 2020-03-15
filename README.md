@@ -25,7 +25,7 @@ height = 16
 dataset = semeion.read_data_semeion()
 ```
 
-<img src="https://raw.githubusercontent.com/tentone/semeionNet/master/readme/dataset.png">
+<img src="https://raw.githubusercontent.com/tentone/semeionNet/master/readme/dataset.png" width="400">
 
 
 
